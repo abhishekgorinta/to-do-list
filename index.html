@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <div class="container" data-aos="flip-left">
+        <h1 class=".he"> Todo List</h1>
+
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter your task" required>
+            <button id="addBtn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <h2>Total Tasks count <span id="totalCount">0</span></h2>
+        <div class="s">
+            <ul>
+                <li><a href="#p"><i class="fa-regular fa-circle"></i> Task</li>
+                <li><a href="#c"><i class="fa-regular fa-circle-check"></i> completed</a></li>
+            </ul>
+
+
+
+            <div class="p" id="p" >
+
+                <h2><i class="fa-regular fa-circle"></i> Pending Tasks <span id="pendingCount">0</span> </h2>
+                <div id="taskList" class="task-box"></div>
+            </div>
+
+
+            <div class="c" id="c" >
+                <h2><i class="fa-regular fa-circle-check"></i> Completed Tasks <span id="completedCount">0</span></h2>
+                <div id="completedList" class="task-box completed"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

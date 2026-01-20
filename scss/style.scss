@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+$primary-light: #F3F0Ff;
+$primary-c: #fff;
+$primary-dark: #111827;
+$shadow-color: 5px 5px 5px 5px rgba(0, 0, 0, 0.377);
+
+body {
+    background-color: $primary-light;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: $primary-c;
+    padding: 20px;
+    border-radius: 10px;
+    color: $primary-dark;
+    box-shadow: $shadow-color;
+
+    h1 {
+        color: $primary-dark;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-weight: bold;
+
+    }
+}
+
+.s {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#addBtn {
+    border: 2px solid $primary-dark;
+    width: 50px;
+    background-color: $primary-dark;
+    color: $primary-c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span {
+    overflow-x: auto;
+    border: hidden;
+    outline: none;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid $primary-dark;
+    outline: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.p {
+
+    box-shadow: $shadow-color;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+
+    h1 {
+        text-align: center;
+    }
+
+}
+
+ul {
+    display: none;
+}
+
+a {
+    display: none;
+}
+
+.c {
+
+    box-shadow: $shadow-color;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+.task-box {
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.task {
+    background: $primary-dark;
+    color: $primary-c;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.task.completed {
+
+    text-decoration: line-through;
+}
+
+.actions button {
+    margin-left: 5px;
+    color: $primary-c;
+}
+
+button {
+    color: $primary-c;
+    border: none;
+    border-radius: 5px;
+}
+
+.actions button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    transform: scale(1.2);
+}
+
+.actions button:focus {
+    outline: none;
+}
+
+@media (max-width:950px) {
+    .s {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+    }
+
+    a {
+        display: block;
+        margin-top: 5px;
+        font-size: 18px;
+        text-decoration: none;
+        color: $primary-dark;
+        font-weight: bold;
+    }
+
+    ul {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            display: block;
+            margin-top: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            color: $primary-dark;
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width:500px) {
+        .container {
+            width: 95%;
+            margin: 20px auto;
+            padding: 10px;
+
+            h1 {
+
+                font-size: 30px;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 10px;
+            padding: 10px 0;
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                display: block;
+                margin-top: 5px;
+                font-size: 18px;
+                text-decoration: none;
+                color: $primary-dark;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
