@@ -21,10 +21,10 @@ This app helps users organize their daily tasks by adding, editing, completing, 
 ## 📂 Project Structure
 
 ToDo-List-App/
-│
-├── index.html
-├── scss/
-│ └── style.scss
+*│
+*├── index.html
+*├── scss/
+*│ └── style.scss
 ├── css/
 │ └── style.css
 ├── script.js
