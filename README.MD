@@ -19,7 +19,7 @@ This app helps users organize their daily tasks by adding, editing, completing, 
 - **JavaScript (ES6)** – App functionality and interactivity  
 
 ## 📂 Project Structure
-
+```
 ToDo-List-App/
 *│
 *├── index.html
@@ -30,7 +30,7 @@ ToDo-List-App/
 ├── script.js
 │ 
 └── README.md
-
+```
 
 ## ⚙️ How to Run the Project
 
